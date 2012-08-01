@@ -1,0 +1,11 @@
+[user]
+	name = Yelantsev Serj
+	email = elantsev.s@yandex.ru
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[color]
+	diff = auto
+	status = auto
+	branch = auto
