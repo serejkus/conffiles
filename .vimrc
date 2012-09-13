@@ -22,3 +22,7 @@ set ignorecase
 set smartcase
 
 colorscheme desert
+
+nnoremap <C-m> :make
+nnoremap <C-v> :cn<CR>
+
