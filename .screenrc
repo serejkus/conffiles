@@ -1,0 +1,15 @@
+altscreen on
+autodetach on
+caption always
+defcharset UTF-8
+defencoding UTF-8
+defscrollback 2000
+defutf8 on
+
+# touch $HOME/.ssh/rc && chmod 755 $HOME/.ssh/rc
+# Contents of $HOME/.ssh/rc:
+# #!/bin/bash
+# if test "$SSH_AUTH_SOCK" ; then
+#   ln -sf $SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
+# fi
+setenv SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
