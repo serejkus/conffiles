@@ -10,17 +10,21 @@ set smarttab
 set encoding=utf-8
 set fileencodings=utf-8,cp1251
 
+set backspace=indent,eol,start
+
 set number
 set showcmd   " command line status
 set ruler
 set nowrap
 set linebreak
+set showmode
 
 set showmatch " matching brackets
+" matchpairs determines characters that form pairs
 
 set cindent
-set ai
-set si
+set autoindent
+set smartindent
 
 set hlsearch
 set incsearch
