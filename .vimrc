@@ -18,6 +18,7 @@ set ruler
 set nowrap
 set linebreak
 set showmode
+set laststatus=2
 
 set showmatch " matching brackets
 " matchpairs determines characters that form pairs
