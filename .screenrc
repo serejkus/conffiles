@@ -9,6 +9,12 @@ defutf8 on
 # enable mouse
 termcapinfo xterm|xterms|xs|rxvt ti@:te@
 
+# moving over regions in vim style
+bind j focus down
+bind k focus up
+bind t focus top
+bind b focus bottom
+
 # touch $HOME/.ssh/rc && chmod 755 $HOME/.ssh/rc
 # Contents of $HOME/.ssh/rc:
 # #!/bin/bash
