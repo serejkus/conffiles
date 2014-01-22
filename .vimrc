@@ -1,10 +1,11 @@
 set nocompatible
 
-syntax on
+syntax enable
 
 set expandtab
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
 set smarttab
 
 set encoding=utf-8
@@ -15,10 +16,14 @@ set backspace=indent,eol,start
 set number
 set showcmd   " command line status
 set ruler
+set cursorline
 set nowrap
 set linebreak
 set showmode
 set laststatus=2
+
+set wildmenu
+set wildmode=longest:full,full
 
 set showmatch " matching brackets
 " matchpairs determines characters that form pairs
