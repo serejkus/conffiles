@@ -2,7 +2,8 @@ startup_message off
 
 altscreen on
 autodetach on
-caption always
+caption always "%3n %t %= | %l | %H | %c"
+hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
 defcharset UTF-8
 defencoding UTF-8
 defscrollback 2000
