@@ -50,6 +50,8 @@ nnoremap <C-v> :cn<CR>
 filetype plugin on
 filetype on
 
+set tags=tags;,TAGS;
+
 au FileType make setlocal noexpandtab " not replacing tabs with spaces in Makefiles
 
 " highliting trailing whitespaces
