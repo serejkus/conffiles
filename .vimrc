@@ -63,11 +63,17 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 let mapleader = "\\"
+
 " <C-d> in insert mode deletes a line
 inoremap <C-d> <esc>ddi
 " <C-d> in insert mode uppercases a word
 inoremap <C-u> <esc>vawU<esc>i
-" opening vimrc
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
+" replacing line under cursor with yanked one
+nnoremap <leader>p Vp
+
+" opening vimrc (ev - edit vimrc)
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+" reloading vimrc (sv - source vimrc)
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
