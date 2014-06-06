@@ -67,4 +67,7 @@ let mapleader = "\\"
 inoremap <C-d> <esc>ddi
 " <C-d> in insert mode uppercases a word
 inoremap <C-u> <esc>vawU<esc>i
+" opening vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
 
