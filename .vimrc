@@ -62,6 +62,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+let mapleader = "\\"
 " <C-d> in insert mode deletes a line
 inoremap <C-d> <esc>ddi
 " <C-d> in insert mode uppercases a word
