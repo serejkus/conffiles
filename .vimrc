@@ -62,3 +62,6 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" <C-d> in insert mode deletes a line
+imap <C-d> <esc>ddi
+
