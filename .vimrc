@@ -64,4 +64,6 @@ autocmd BufWinLeave * call clearmatches()
 
 " <C-d> in insert mode deletes a line
 imap <C-d> <esc>ddi
+" <C-d> in insert mode uppercases a word
+imap <C-u> <esc>vawU<esc>i
 
