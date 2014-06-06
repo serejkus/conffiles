@@ -22,6 +22,16 @@ set linebreak
 set showmode
 set laststatus=2
 
+set statusline=%f             " path to file
+set statusline+=\ -\          " separator
+set statusline+=%n            " buffer number
+set statusline+=\ -\          " separator
+set statusline+=FileType:\ %y " filetype
+set statusline+=\ -\          " separator
+set statusline+=%m            " modifiable
+set statusline+=%=            " moving to the right side
+set statusline+=%l/%L         " line / total lines
+
 set wildmenu
 set wildmode=longest:full,full
 
@@ -44,13 +54,11 @@ set foldcolumn=3
 set foldmethod=syntax
 set foldlevelstart=20
 
-nnoremap <C-m> :make
-nnoremap <C-v> :cn<CR>
-
 filetype plugin on
 filetype on
 
 set tags=tags;,TAGS;
+"set tag=./tags,./TAGS,tags,TAGS
 
 au FileType make setlocal noexpandtab " not replacing tabs with spaces in Makefiles
 
@@ -63,6 +71,11 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 let mapleader = "\\"
+
+nnoremap <F12> :sh<CR>
+nnoremap <F9> :make<CR>
+nnoremap <F7> :cn<CR>
+nnoremap <F6> :cp<CR>
 
 " <C-d> in insert mode deletes a line
 inoremap <C-d> <esc>ddi
