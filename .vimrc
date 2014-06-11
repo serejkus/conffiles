@@ -77,6 +77,9 @@ nnoremap <F9> :make<CR>
 nnoremap <F7> :cn<CR>
 nnoremap <F6> :cp<CR>
 
+nnoremap <F5> :call SetMp()<CR>
+nnoremap <F3> :call SwitchHeaders()<CR>
+
 " <C-d> in insert mode deletes a line
 inoremap <C-d> <esc>ddi
 " <C-d> in insert mode uppercases a word
