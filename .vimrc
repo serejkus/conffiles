@@ -47,7 +47,7 @@ set incsearch
 set ignorecase
 set smartcase
 
-colorscheme desert
+colorscheme desertEx
 
 set foldenable
 set foldcolumn=3
