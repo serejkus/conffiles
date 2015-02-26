@@ -1,0 +1,22 @@
+[ui]
+username = Serj Elantsev <elantsev@yandex-team.ru>
+editor = vim
+merge = vimdiff
+ssh = ssh -C
+
+[alias]
+ci = commit
+
+[extensions]
+color =
+inotify =
+
+
+[tortoisehg]
+ui.language = en
+vdiff = gvimdiff
+editor = gvim
+shell = terminator --working-directory=%(reponame)
+tabwidth = 4
+forcerepotab = False
+
