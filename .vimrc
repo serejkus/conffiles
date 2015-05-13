@@ -106,7 +106,7 @@ let mapleader = "\\"
 " <C-d> in insert mode uppercases a word
 inoremap <C-u> <esc>vawU<esc>i
 
-nnoremap <leader>h :nohlsearch<cr>
+nnoremap <leader>h :set hlsearch!<cr>
 
 " replacing line under cursor with yanked one
 nnoremap <leader>p Vp
